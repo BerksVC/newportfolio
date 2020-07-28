@@ -33,3 +33,8 @@ $secondary-color: #AD9D4A;
         @content;
     }
 }
+@mixin media-xs {
+    @media screen and (min-width: 480px){
+        @content;
+    }
+}

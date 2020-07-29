@@ -10,9 +10,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 2rem;
     .text-secondary{
         margin: 2rem 0 5rem 0;
-        color: set-text-color($primary-color);
+        color: $secondary-color;
         font-size: 3rem;
     }
     &_work{

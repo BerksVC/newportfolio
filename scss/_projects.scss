@@ -2,8 +2,8 @@
     background: 
     linear-gradient(
         to bottom,
-        rgba($secondary-color, 0.1),
-        rgba($primary-color, 0.9)
+        rgba($primary-color, 0.9),
+        rgba($secondary-color, 0.1)
     );
     background-size:cover;
     display: flex;
@@ -12,25 +12,91 @@
     justify-content: flex-end;
     .text-secondary{
         margin: 2rem 0 5rem 0;
-        color: set-text-color($primary-color);
+        color: $secondary-color;
         font-size: 3rem;
     }
     &_work{
-        width: 50vw;
+        width: 30vw;
         margin: 2rem auto 10rem auto;
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
-        background: lighten($primary-color, 10%);
-        padding: 0.5rem 0.3rem;
-        border-bottom: 0.5rem;
-        border-bottom: 5px solid $secondary-color;
+        // background: lighten($primary-color, 10%);
+        // padding: 0.5rem 0.3rem;
+        // border-bottom: 0.5rem;
+        // border-bottom: 5px solid $secondary-color;
 
         h2, h3{
             //margin: 0.1rem 0 0.1rem;
             font-weight: 500;
 
 
+        }
+    }
+    &_item{
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor:pointer;
+
+        img{
+            width: 100%;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $secondary-color;
+            opacity: 0;
+            @include transition-ease;
+        }
+        &:focus{
+            &::after{
+                top: 0;
+                opacity: 0.5;
+            }
+            .proj_btn{
+                opacity: 1;
+            }
+        }
+        &.open{
+            &::after{
+                top: 0;
+                opacity: 0.5;
+            }
+            .proj_btn{
+                opacity: 1;
+            }
+        }
+        h2{
+            align-items: center;
+        }
+
+    }
+
+    &_btns{
+        position: absolute;
+        visibility: visible;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+    }
+    &_btn {
+        opacity: 0;
+        color: set-text-color($secondary-color);
+        @include transition-ease;
+
+        &:hover{
+            color: set-text-color(set-text-color($secondary-color));
         }
     }
 }

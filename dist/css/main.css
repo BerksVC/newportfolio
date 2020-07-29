@@ -28,7 +28,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(173, 157, 74, 0.1), rgba(39, 39, 39, 0.6), rgba(255, 255, 255, 0.35));
+  background: linear-gradient(to bottom, rgba(204, 155, 26, 0.1), rgba(24, 24, 24, 0.6), rgba(255, 255, 255, 0.35));
 }
 
 .home_name {
@@ -39,7 +39,7 @@
 
 .home_name-first {
   position: relative;
-  color: #AD9D4A;
+  color: #cc9b1a;
   font-weight: 700;
   animation: moveleft 1s;
   animation-iteration-count: 1;
@@ -97,7 +97,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #AD9D4A;
+  background: #cc9b1a;
   transition: all 0.5s ease-in-out;
 }
 
@@ -107,7 +107,7 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #AD9D4A;
+  background: #cc9b1a;
   transition: all 0.5s ease-in-out;
 }
 
@@ -145,7 +145,7 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background: #272727;
+  background: #181818;
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
@@ -166,7 +166,7 @@
 }
 
 .nav .menu-nav_item.active > a {
-  color: #AD9D4A;
+  color: #cc9b1a;
 }
 
 .nav .menu-nav_link {
@@ -179,11 +179,11 @@
 }
 
 .nav .menu-nav_link.active a {
-  color: #AD9D4A;
+  color: #cc9b1a;
 }
 
 .nav .menu-nav_link:hover {
-  color: #AD9D4A;
+  color: #cc9b1a;
 }
 
 .menu-nav_item:nth-child(1) {
@@ -209,14 +209,14 @@
 .about .text-secondary {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  color: #fff;
+  color: #cc9b1a;
   font-size: 3rem;
 }
 
 .about_bio-image {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.513), rgba(39, 39, 39, 0.1), rgba(173, 157, 74, 0.1)), url("../img/kirby3.jpg") center top;
+  background: linear-gradient(to bottom, rgba(24, 24, 24, 0.525), rgba(24, 24, 24, 0.1), rgba(204, 155, 26, 0.1)), url("../img/kirby3.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -237,17 +237,18 @@
 }
 
 .exp {
-  background: linear-gradient(to bottom, rgba(173, 157, 74, 0.1), rgba(39, 39, 39, 0.9));
+  background: linear-gradient(to bottom, rgba(204, 155, 26, 0.1), rgba(24, 24, 24, 0.9));
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 2rem;
 }
 
 .exp .text-secondary {
   margin: 2rem 0 5rem 0;
-  color: #fff;
+  color: #cc9b1a;
   font-size: 3rem;
 }
 
@@ -257,10 +258,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  background: #414141;
+  background: #323232;
   padding: 0.5rem 0.3rem;
   border-bottom: 0.5rem;
-  border-bottom: 5px solid #AD9D4A;
+  border-bottom: 5px solid #cc9b1a;
 }
 
 .exp_work h2, .exp_work h3 {
@@ -268,7 +269,7 @@
 }
 
 .proj {
-  background: linear-gradient(to bottom, rgba(173, 157, 74, 0.1), rgba(39, 39, 39, 0.9));
+  background: linear-gradient(to bottom, rgba(24, 24, 24, 0.9), rgba(204, 155, 26, 0.1));
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -278,24 +279,88 @@
 
 .proj .text-secondary {
   margin: 2rem 0 5rem 0;
-  color: #fff;
+  color: #cc9b1a;
   font-size: 3rem;
 }
 
 .proj_work {
-  width: 50vw;
+  width: 30vw;
   margin: 2rem auto 10rem auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  background: #414141;
-  padding: 0.5rem 0.3rem;
-  border-bottom: 0.5rem;
-  border-bottom: 5px solid #AD9D4A;
 }
 
 .proj_work h2, .proj_work h3 {
   font-weight: 500;
+}
+
+.proj_item {
+  position: relative;
+  border-bottom: 5px solid #cc9b1a;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.proj_item img {
+  width: 100%;
+}
+
+.proj_item::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #cc9b1a;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.proj_item:focus::after {
+  top: 0;
+  opacity: 0.5;
+}
+
+.proj_item:focus .proj_btn {
+  opacity: 1;
+}
+
+.proj_item.open::after {
+  top: 0;
+  opacity: 0.5;
+}
+
+.proj_item.open .proj_btn {
+  opacity: 1;
+}
+
+.proj_item h2 {
+  align-items: center;
+}
+
+.proj_btns {
+  position: absolute;
+  visibility: visible;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.proj_btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.proj_btn:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -321,7 +386,15 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1024px) {
+  .proj_work {
+    width: 80vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
   .social-icons {
     display: flex;
     flex-direction: column;
@@ -332,10 +405,50 @@
     bottom: 5.5rem;
     margin-bottom: 3rem;
   }
+  .proj_item {
+    position: relative;
+    border-bottom: 5px solid #cc9b1a;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .proj_item img {
+    width: 100%;
+  }
+  .proj_item::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #cc9b1a;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .proj_item .proj_btns {
+    position: relative;
+    visibility: visible;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+  }
+  .proj_item .proj_btn {
+    opacity: 0;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  .proj_item .proj_btn:hover {
+    color: #fff;
+  }
 }
 
 body {
-  background: #272727;
+  background: #181818;
   color: #fff;
   height: 100vh;
   font-family: 'Roboto', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
@@ -356,7 +469,7 @@ p {
 }
 
 .text-secondary {
-  color: #AD9D4A;
+  color: #cc9b1a;
   font-family: 'Lora', 'Times New Roman', Times, serif;
 }
 
@@ -376,6 +489,10 @@ main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
+}
+
+main .social-icons a {
+  padding: 0.3rem;
 }
 
 footer {

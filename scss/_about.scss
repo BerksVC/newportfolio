@@ -5,7 +5,7 @@
     .text-secondary{
         margin-top: 5rem;
         margin-bottom: 5rem;
-        color: set-text-color($primary-color);
+        color: $secondary-color;
         font-size: 3rem;
     }
 
@@ -14,7 +14,7 @@
         width: 100%;
         background: 
     linear-gradient(
-        to bottom, rgba($primary-color, 0.513), 
+        to bottom, rgba($primary-color, 0.525), 
     rgba($primary-color, 0.1), rgba($secondary-color,0.1)),
     url('../img/kirby3.jpg') center top;
     background-size: cover;

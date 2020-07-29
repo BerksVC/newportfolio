@@ -45,6 +45,9 @@ main{
         //flex-direction: column;
         bottom: 1rem;
         left: 1rem;
+        a {
+            padding: 0.3rem;
+        }
     }
 }
 footer{ //on media query rotate the fucker

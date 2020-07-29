@@ -1,5 +1,5 @@
-$primary-color: #272727;
-$secondary-color: #AD9D4A;
+$primary-color: #181818;
+$secondary-color: #cc9b1a;
 
 *{
     box-sizing: border-box;
@@ -34,7 +34,7 @@ $secondary-color: #AD9D4A;
     }
 }
 @mixin media-xs {
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 599px){
         @content;
     }
 }

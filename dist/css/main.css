@@ -132,6 +132,7 @@
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  background: linear-gradient(to bottom, rgba(204, 155, 26, 0.1), rgba(24, 24, 24, 0.1));
 }
 
 .nav.open {

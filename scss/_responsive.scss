@@ -48,6 +48,12 @@
         margin-bottom: 3rem;
         margin-right: -4rem;
     }
+    .exp{
+        &_work{
+            width:60vw;
+            padding: 1rem;
+        }
+    }
     .proj_item{
         position: relative;
         border-bottom: 5px solid $secondary-color;

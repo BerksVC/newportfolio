@@ -254,13 +254,13 @@
 }
 
 .exp_work {
-  width: 50vw;
+  width: 40vw;
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   background: #323232;
-  padding: 0.5rem 0.3rem;
+  padding: 0.5rem 0.5rem;
   border-bottom: 0.5rem;
   border-bottom: 5px solid #cc9b1a;
 }
@@ -406,6 +406,10 @@
     bottom: 5.5rem;
     margin-bottom: 3rem;
     margin-right: -4rem;
+  }
+  .exp_work {
+    width: 60vw;
+    padding: 1rem;
   }
   .proj_item {
     position: relative;

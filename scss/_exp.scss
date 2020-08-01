@@ -17,13 +17,13 @@
         font-size: 3rem;
     }
     &_work{
-        width: 50vw;
+        width: 40vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
         background: lighten($primary-color, 10%);
-        padding: 0.5rem 0.3rem;
+        padding: 0.5rem 0.5rem;
         border-bottom: 0.5rem;
         border-bottom: 5px solid $secondary-color;
 

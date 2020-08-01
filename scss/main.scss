@@ -5,13 +5,16 @@
 @import 'exp';
 @import 'projects';
 @import 'responsive';
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: $primary-color;
     color: set-text-color($primary-color);
     height: 100vh;
     font-family: 'Roboto', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
+    
 
 }
 h1, h2, h3 {
@@ -39,6 +42,7 @@ header{
 main{
     height: 100%;
     width: 100%;
+    
     .social-icons{ //on media query rotate the fucker
         position: fixed;
         //display: flex;

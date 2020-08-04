@@ -18,6 +18,7 @@ $secondary-color: #cc9b1a;
         @return #fff;
     }
 }
+
 @mixin media-md {
     @media screen and (min-width: 768px) {
         @content;

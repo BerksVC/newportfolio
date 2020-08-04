@@ -54,16 +54,7 @@
             opacity: 0;
             @include transition-ease;
         }
-        &:focus{
-            &::after{
-                top: 0;
-                opacity: 0.5;
-            }
-            .proj_btn{
-                opacity: 1;
-            }
-        }
-        &.open{
+        &:hover{
             &::after{
                 top: 0;
                 opacity: 0.5;
@@ -77,7 +68,15 @@
         }
 
     }
-
+.open{
+            &::after{
+                top: 0;
+                opacity: 0.5;
+            }
+            .proj_btn{
+                opacity: 1;
+            }
+        }
     &_btns{
         position: absolute;
         visibility: visible;

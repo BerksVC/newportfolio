@@ -319,26 +319,26 @@
   transition: all 0.5s ease-in-out;
 }
 
-.proj_item:focus::after {
+.proj_item:hover::after {
   top: 0;
   opacity: 0.5;
 }
 
-.proj_item:focus .proj_btn {
-  opacity: 1;
-}
-
-.proj_item.open::after {
-  top: 0;
-  opacity: 0.5;
-}
-
-.proj_item.open .proj_btn {
+.proj_item:hover .proj_btn {
   opacity: 1;
 }
 
 .proj_item h2 {
   align-items: center;
+}
+
+.proj .open::after {
+  top: 0;
+  opacity: 0.5;
+}
+
+.proj .open .proj_btn {
+  opacity: 1;
 }
 
 .proj_btns {

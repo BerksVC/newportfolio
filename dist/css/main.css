@@ -92,7 +92,7 @@
 }
 
 .menu-btn_burger::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   width: 28px;
@@ -102,7 +102,7 @@
 }
 
 .menu-btn_burger::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   width: 20px;
@@ -164,10 +164,6 @@
 
 .nav .menu-nav_item.open {
   transform: translateX(0);
-}
-
-.nav .menu-nav_item.active > a {
-  color: #cc9b1a;
 }
 
 .nav .menu-nav_link {
@@ -265,7 +261,8 @@
   border-bottom: 5px solid #cc9b1a;
 }
 
-.exp_work h2, .exp_work h3 {
+.exp_work h2,
+.exp_work h3 {
   font-weight: 500;
 }
 
@@ -281,7 +278,16 @@
 .proj .text-secondary {
   margin: 2rem 0 5rem 0;
   color: #cc9b1a;
+}
+
+.proj h1 {
   font-size: 3rem;
+}
+
+.proj h2,
+.proj h3 {
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 .proj_work {
@@ -290,10 +296,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-}
-
-.proj_work h2, .proj_work h3 {
-  font-weight: 500;
 }
 
 .proj_item {
@@ -308,7 +310,7 @@
 }
 
 .proj_item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;
@@ -421,7 +423,7 @@
     width: 100%;
   }
   .proj_item::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 0;
@@ -461,11 +463,13 @@ body {
   background: #181818;
   color: #fff;
   height: 100vh;
-  font-family: 'Roboto', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
@@ -475,12 +479,12 @@ a {
 }
 
 p {
-  font-family: 'Lato', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lato", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .text-secondary {
   color: #cc9b1a;
-  font-family: 'Bebas Neue', Segoe UI, Tahoma, Geneva, Verdana, cursive, sans-serif;
+  font-family: "Bebas Neue", Segoe UI, Tahoma, Geneva, Verdana, cursive, sans-serif;
 }
 
 header {

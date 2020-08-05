@@ -1,102 +1,100 @@
 @include media-md {
-    .menu-btn{
-        visibility: hidden;
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
 
+      &_item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+      &_link {
+        font-size: 1.5rem;
+      }
     }
-    .nav{
-        visibility: visible;
-        .menu-nav{
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: right;
-
-            &_item{
-                display: inline;
-                padding-right: 1.5rem;
-
-            }
-            &_link{
-                font-size: 1.5rem;
-            }
-        }
-    }
-    // .proj_item{
-    //     border-bottom: 5px solid $secondary-color;
-    // }
+  }
+  // .proj_item{
+  //     border-bottom: 5px solid $secondary-color;
+  // }
 }
-@include media-lg{
-    .proj{
-        &_work{
-            width:80vw;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 4rem;
-        }
+@include media-lg {
+  .proj {
+    &_work {
+      width: 80vw;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
     }
+  }
 }
 
 @include media-xs {
-    .social-icons{
-        display: flex;
-        flex-direction: column;
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    transform: rotate(90deg);
+    translate: (-3rem, -5rem);
+    bottom: 5.5rem;
+    margin-bottom: 3rem;
+    margin-right: -4rem;
+  }
+  .exp {
+    &_work {
+      width: 60vw;
+      padding: 1rem;
     }
-    footer{
-        transform: rotate(90deg);
-        translate: (-3rem, -5rem);
-        bottom: 5.5rem;
-        margin-bottom: 3rem;
-        margin-right: -4rem;
-    }
-    .exp{
-        &_work{
-            width:60vw;
-            padding: 1rem;
-        }
-    }
-    .proj_item{
-        position: relative;
-        border-bottom: 5px solid $secondary-color;
-        overflow: hidden;
-        cursor:pointer;
+  }
+  .proj_item {
+    position: relative;
+    border-bottom: 5px solid $secondary-color;
+    overflow: hidden;
+    cursor: pointer;
 
-        img{
-            width: 100%;
-        }
+    img {
+      width: 100%;
+    }
 
-        &::after{
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: $secondary-color;
-            
-            opacity: 0;
-            @include transition-ease;
-        }
-    .proj_btns{
-        position: relative;
-        visibility: visible;
-        top: 0%;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        text-align: center;
-        //border-bottom: 5px solid $secondary-color;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: $secondary-color;
+
+      opacity: 0;
+      @include transition-ease;
+    }
+    .proj_btns {
+      position: relative;
+      visibility: visible;
+      top: 0%;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      text-align: center;
+      //border-bottom: 5px solid $secondary-color;
     }
     .proj_btn {
-        opacity: 0;
-        color: set-text-color($primary-color);
-        @include transition-ease;
-        //padding-bottom: 0.2rem;
-        &:hover{
-            color: set-text-color(set-text-color($secondary-color));
-        }
+      opacity: 0;
+      color: set-text-color($primary-color);
+      @include transition-ease;
+      //padding-bottom: 0.2rem;
+      &:hover {
+        color: set-text-color(set-text-color($secondary-color));
+      }
     }
-}
+  }
 }

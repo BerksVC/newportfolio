@@ -37,7 +37,7 @@
   }
   &_item {
     position: relative;
-    border-bottom: 5px solid $secondary-color;
+    //border-bottom: 5px solid $secondary-color;
     overflow: hidden;
     cursor: pointer;
 
@@ -60,6 +60,7 @@
       &::after {
         top: 0;
         opacity: 0.5;
+        border-bottom: 5px solid $secondary-color;
       }
       .proj_btn {
         opacity: 1;
@@ -67,12 +68,15 @@
     }
     h2 {
       align-items: center;
+      font-family: "Bebas Neue", Segoe UI, Tahoma, Geneva, Verdana, cursive,
+        sans-serif;
     }
   }
   .open {
     &::after {
       top: 0;
       opacity: 0.5;
+      border-bottom: 5px solid $secondary-color;
     }
     .proj_btn {
       opacity: 1;
@@ -99,4 +103,32 @@
       color: set-text-color(set-text-color($secondary-color));
     }
   }
+
+  // &_write {
+  //   width: 30vw;
+  //   margin: 2rem auto 10rem auto;
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   gap: 2rem;
+  //   &-btns {
+  //     position: absolute;
+  //     visibility: visible;
+  //     top: 0%;
+  //     height: 100%;
+  //     width: 100%;
+  //     z-index: 1;
+  //     display: grid;
+  //     grid-template-columns: 1fr;
+  //     align-items: center;
+  //     text-align: center;
+  //   }
+  //   &-btn {
+  //     opacity: 0;
+  //     color: set-text-color($secondary-color);
+  //     @include transition-ease;
+  //     &:hover {
+  //       color: set-text-color(set-text-color($secondary-color));
+  //     }
+  //   }
+  // }
 }

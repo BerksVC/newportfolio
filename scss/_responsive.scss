@@ -23,6 +23,22 @@
   // .proj_item{
   //     border-bottom: 5px solid $secondary-color;
   // }
+  .proj_btn {
+    opacity: 0;
+    color: set-text-color($primary-color);
+    font-size: 3rem;
+    @include transition-ease;
+    //padding-bottom: 0.2rem;
+    &:hover {
+      color: set-text-color(set-text-color($secondary-color));
+    }
+  }
+  .proj_select {
+    h2 {
+      font-size: 3rem;
+      margin: 0.5rem
+    }
+  }
 }
 @include media-lg {
   .proj {
@@ -54,7 +70,7 @@
   }
   .proj_item {
     position: relative;
-    border-bottom: 5px solid $secondary-color;
+    //border-bottom: 5px solid $secondary-color;
     overflow: hidden;
     cursor: pointer;
 

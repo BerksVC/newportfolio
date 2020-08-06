@@ -300,7 +300,6 @@
 
 .proj_item {
   position: relative;
-  border-bottom: 5px solid #cc9b1a;
   overflow: hidden;
   cursor: pointer;
 }
@@ -324,6 +323,7 @@
 .proj_item:hover::after {
   top: 0;
   opacity: 0.5;
+  border-bottom: 5px solid #cc9b1a;
 }
 
 .proj_item:hover .proj_btn {
@@ -332,11 +332,13 @@
 
 .proj_item h2 {
   align-items: center;
+  font-family: "Bebas Neue", Segoe UI, Tahoma, Geneva, Verdana, cursive, sans-serif;
 }
 
 .proj .open::after {
   top: 0;
   opacity: 0.5;
+  border-bottom: 5px solid #cc9b1a;
 }
 
 .proj .open .proj_btn {
@@ -387,6 +389,19 @@
   .nav .menu-nav_link {
     font-size: 1.5rem;
   }
+  .proj_btn {
+    opacity: 0;
+    color: #fff;
+    font-size: 3rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .proj_btn:hover {
+    color: #fff;
+  }
+  .proj_select h2 {
+    font-size: 3rem;
+    margin: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -415,7 +430,6 @@
   }
   .proj_item {
     position: relative;
-    border-bottom: 5px solid #cc9b1a;
     overflow: hidden;
     cursor: pointer;
   }

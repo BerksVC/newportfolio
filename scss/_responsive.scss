@@ -112,5 +112,11 @@
         color: set-text-color(set-text-color($secondary-color));
       }
     }
+    .proj_select {
+      h2 {
+        font-size: 1rem;
+        margin: 0.5rem
+      }
+    }
   }
 }

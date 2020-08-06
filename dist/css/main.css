@@ -467,6 +467,10 @@
   .proj_item .proj_btn:hover {
     color: #fff;
   }
+  .proj_item .proj_select h2 {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
 }
 
 html {

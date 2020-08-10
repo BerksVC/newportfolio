@@ -28,7 +28,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(204, 155, 26, 0.1), rgba(24, 24, 24, 0.6), rgba(255, 255, 255, 0.35));
+  background: linear-gradient(to bottom, rgba(204, 72, 41, 0.3), rgba(24, 24, 24, 0.6), rgba(255, 255, 255, 0.35));
 }
 
 .home_name {
@@ -39,7 +39,7 @@
 
 .home_name-first {
   position: relative;
-  color: #cc9b1a;
+  color: #cc4829;
   font-weight: 700;
   animation: moveleft 1s;
   animation-iteration-count: 1;
@@ -97,7 +97,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #cc9b1a;
+  background: #cc4829;
   transition: all 0.5s ease-in-out;
 }
 
@@ -107,7 +107,7 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #cc9b1a;
+  background: #cc4829;
   transition: all 0.5s ease-in-out;
 }
 
@@ -132,7 +132,7 @@
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
-  background: linear-gradient(to bottom, rgba(204, 155, 26, 0.1), rgba(24, 24, 24, 0.1));
+  background: linear-gradient(to bottom, rgba(204, 72, 41, 0.1), rgba(24, 24, 24, 0.1));
 }
 
 .nav.open {
@@ -176,11 +176,11 @@
 }
 
 .nav .menu-nav_link.active a {
-  color: #cc9b1a;
+  color: #cc4829;
 }
 
 .nav .menu-nav_link:hover {
-  color: #cc9b1a;
+  color: #cc4829;
 }
 
 .menu-nav_item:nth-child(1) {
@@ -206,14 +206,14 @@
 .about .text-secondary {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  color: #cc9b1a;
+  color: #cc4829;
   font-size: 3rem;
 }
 
 .about_bio-image {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(24, 24, 24, 0.525), rgba(24, 24, 24, 0.1), rgba(204, 155, 26, 0.1)), url("../img/kirby3.jpg") center top;
+  background: linear-gradient(to bottom, rgba(24, 24, 24, 0.525), rgba(24, 24, 24, 0.2), rgba(204, 72, 41, 0.5)), url("../img/kirby3.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -234,7 +234,7 @@
 }
 
 .exp {
-  background: linear-gradient(to bottom, rgba(204, 155, 26, 0.1), rgba(24, 24, 24, 0.9));
+  background: linear-gradient(to bottom, rgba(204, 72, 41, 0.1), rgba(24, 24, 24, 0.9));
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -245,7 +245,7 @@
 
 .exp .text-secondary {
   margin: 2rem 0 5rem 0;
-  color: #cc9b1a;
+  color: #cc4829;
   font-size: 3rem;
 }
 
@@ -258,7 +258,7 @@
   background: #323232;
   padding: 0.5rem 0.5rem;
   border-bottom: 0.5rem;
-  border-bottom: 5px solid #cc9b1a;
+  border-bottom: 5px solid #cc4829;
 }
 
 .exp_work h2,
@@ -267,7 +267,7 @@
 }
 
 .proj {
-  background: linear-gradient(to bottom, rgba(24, 24, 24, 0.9), rgba(204, 155, 26, 0.1));
+  background: linear-gradient(to bottom, rgba(24, 24, 24, 0.9), rgba(204, 72, 41, 0.1));
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -277,7 +277,7 @@
 
 .proj .text-secondary {
   margin: 2rem 0 5rem 0;
-  color: #cc9b1a;
+  color: #cc4829;
 }
 
 .proj h1 {
@@ -315,7 +315,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #cc9b1a;
+  background: #cc4829;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -323,7 +323,7 @@
 .proj_item:hover::after {
   top: 0;
   opacity: 0.5;
-  border-bottom: 5px solid #cc9b1a;
+  border-bottom: 5px solid #cc4829;
 }
 
 .proj_item:hover .proj_btn {
@@ -338,7 +338,7 @@
 .proj .open::after {
   top: 0;
   opacity: 0.5;
-  border-bottom: 5px solid #cc9b1a;
+  border-bottom: 5px solid #cc4829;
 }
 
 .proj .open .proj_btn {
@@ -443,7 +443,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: #cc9b1a;
+    background: #cc4829;
     opacity: 0;
     transition: all 0.5s ease-in-out;
   }
@@ -501,7 +501,7 @@ p {
 }
 
 .text-secondary {
-  color: #cc9b1a;
+  color: #cc4829;
   font-family: "Bebas Neue", Segoe UI, Tahoma, Geneva, Verdana, cursive, sans-serif;
 }
 

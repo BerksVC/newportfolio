@@ -428,6 +428,9 @@
     width: 60vw;
     padding: 1rem;
   }
+  .proj_work {
+    width: 60vw;
+  }
   .proj_item {
     position: relative;
     overflow: hidden;
